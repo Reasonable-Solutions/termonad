@@ -205,6 +205,9 @@ setupScreenStyle = do
             , "tab {"
             , "  background-color: transparent;"
             , "}"
+            , "notebook {"
+            ,   "    border: none;"
+            , "}"
             ]
       let styleData = encodeUtf8 (unlines textLines :: Text)
       cssProviderLoadFromData cssProvider styleData
